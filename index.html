@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="Content-Type" charset="utf-8">
+	<title>SteamTradeL</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+     <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</head>
+<style>
+	
+ 	 a {	
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: #0c59cf;
+   } 
+	@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url(Shrift/OpenSans.ttf); /* Путь к файлу со шрифтом */
+   }
+	#head{
+    width: 100%;
+    height: 15.5%;
+    position: fixed;
+    background: white;
+    z-index: 1000;
+}
+/* Что бы наш следующий блок не заезжал под шапку 
+как только страница загрузилась добавим отступ. */
+#content {
+    margin-top: 60px;
+
+}
+	
+	.karta {
+		margin: -5%;
+
+	}
+	.Kontakt{
+	margin: 10%;
+	margin-top: -4%;	
+	}
+	
+	.plan {
+		
+		border:none;
+
+	}
+	.quote2{
+		color: #798da3;
+		margin: 20%;
+		font-size: 30px;
+	}
+	.button1 {
+		margin: 8%;
+		margin-top: -5%;
+		height: 100px;
+		float: left;
+	}
+	.button2 {
+         margin: -6%;
+		margin-top: -4.5%;
+		height: 100px;
+		float: left;
+	}
+	 .quote{
+	 	color: #798da3;
+	 	font-size: 130%;
+	 	margin: 10%;
+    }
+	.tradesteaml{
+		color: #0c59cf;
+		font-weight: bolder;
+		font-family: Open Sans;
+		font-size: 300%;
+		width: 75%; 
+		margin: 10%
+
+	            }
+	    table {
+    width: 100%; 
+    background: none;
+    color: none; 
+    border-spacing: 1px; 
+   }
+   td{
+   	color: #798da3;
+    background: none; 
+    padding: 5px; 
+   }
+    th{
+   	color: #0c59cf;
+    background: none; 
+    padding: 5px; 
+   }
+	.steamlogo {
+		float: right; 
+	margin: 10%;
+	            }
+    .logo {
+	float: left; 
+	margin: 7px 7px 7px 7px
+       }
+    .onestr {
+    float: left;
+    width: 20%; 
+    color: #0c59cf;
+           }
+    .laststr {
+    float: left;  
+    width: 1%; 
+    color: #0c59cf;
+          }
+    hr {
+    	float="left";
+    border: none; 
+    background-color: silver; 
+    color: silver; 
+    height: 0.5px; 
+     }
+     .lastlogo{
+       height: 40px;
+       width: 40px;
+      text-align: center;
+
+     }
+ </style>
+<body>
+	<div id="head">
+     <img src="LOGO.png" alt="logo" height="61" class="logo">
+       <font face="Open Sans">
+       <nav id="menu">
+       <br><br><p class="onestr"><a href="#Main">Главная </a></p>
+       <p class="onestr"><a href="#Uslug">Услуги </a> </p>
+       <p class="onestr"><a href="#Perspect">Перспективы </a> </p>
+       <p class="onestr"><a href="#ONas">О нас </a> </p>
+       <p class="laststr"><a href="#Kontakt">Контакаты </a> </p>
+       </nav>
+       <br><br><br><hr> 
+       
+       </div>
+       </div id="content">   
+       <a href="https://ru.wikipedia.org/wiki/Steam"><img src="2333.png" alt="stlogo" height="200"  class="steamlogo"></a>
+      <div id="Main"></div> 
+      <br><br><br><p class="tradesteaml" >TradeSteamL<br>School</p>
+       
+      <p class="quote">Трейдинг в Steam является <br> одним из лучших способов <br>выхода на арену трейдинга в 2020</p>
+      <a href="#Uslug"><img src="button1.png" alt="Заказать услуги" class="button1"></a>
+      <a href="#Perspect"><img src="button2.png" alt="Изучить больше" class="button2"></a>
+      <br><br><br><br><br><br><br><br><br><br>
+      <hr>
+
+                <blockquote class="quote2">Трейдинг на площадке  Steam набирает обороты, поэтому сейчас идеальное время чтобы начать свой путь к успеху</blockquote>
+      <div id="Uslug"></div>
+      <hr>
+       <br>  <br>  <br>
+      <font color="#0c59cf">
+      
+      <h1 align="center">Наши услуги</h1>
+      </font>
+      
+      <table>
+      <tr> <!-- Начало первой строки -->
+      <th>
+      <a href="https://forms.gle/rntYDnCPqcmGYtMW6"><img src="plan1.png" alt="Минимум" class="plan" ></a>
+      </th>
+      <th>
+     <a href="https://forms.gle/QWa5qXPM5gEvGZaZ6"><img src="plan2.png" alt="Стандарт" class="plan" ></a>
+      </th>
+      <th>
+     <a href="https://forms.gle/mv5cnLtPGfJ6xJ1f6">  <img src="plan3.png" alt="Премиум" class="plan" > </a>
+      </th>
+      </tr> <!-- Конец первой строки -->
+      <tr><!-- Начало второй строки -->
+      <th align="center"><h4>План: Минимум</h4></th>
+      <th align="center"><h4>План: Стандарт</h4></th>
+      <th align="center"><h4>План: Премиум</h4></th>
+      </tr><!-- Конец второй строки -->
+      <tr><!-- Начало третей строки -->
+      
+      <td align="center">Именно с него начинать может каждый. В План входит: обучение трейду с нуля, ввод в курс економики и несколько первых схем для зароботка</td>
+      <td align="center">В этом плане вас будут обучать не только в теории но и на практике. Также у вас будет доступ к все новым схема трейда</td>
+      <td align="center">Включает два предыдущих курса. С начала и до конца у вас будет 24/7 тех.поддержка, вас поделят на группы и будут помогать выходить постояно в прыбыль</td>
+      
+      </tr><!-- Конец  третей строки -->
+     </table>
+     <div id="Perspect"> </div>
+     <br><br><br><br><br><br>
+     <hr>
+     <br>  <br>  <br>
+     <font color="#0c59cf">
+      <h1 align="center">Перспективы</h1>
+     </font>
+     <font color="#798da3">
+       <h4 align="center">Почему именно наш курс</h4>
+      </font>
+       <table>
+      <tr> <!-- Начало первой строки -->
+      <th>
+      	<img src="1spisok.png" alt="1" class="plan" >
+      </th>
+      <th>
+     <img src="2spisok.png" alt="2" class="plan" >
+      </th>
+      <th>
+       <img src="3spisok.png" alt="3" class="plan" >
+      </th>
+      <th>
+       <img src="4spisok.png" alt="4" class="plan" >
+      </th>
+      </tr> <!-- Конец первой строки -->
+      <tr><!-- Начало второй строки -->
+      <th align="center"><h4>Самые новые схемы</h4><h4></th>
+      <th align="center"><h4>Продвинутые предподаватели</h4></th>
+      <th align="center"><h4>Достаточно быстро окупается
+      </h4></th>
+      <th align="center"><h4>Коммуникация</h4></th>
+      
+      </tr><!-- Конец второй строки -->
+      <tr><!-- Начало третей строки -->
+     
+      <td align="center">Мы используем только 100% актуальные схемы трейда</td>
+      <td align="center">Вашими преподавателями будут профессионалы с опытом более 10 лет</td>
+      <td align="center">Для того чтобы выйти в плюс после курса, вам не нужно будет ждать месяцами</td>
+       <td align="center">Мы предоставляем вам чаты, где вы можете свободно обсуждать и помогать друг другу</td>
+      </tr><!-- Конец  третей строки -->
+      </table>
+      <div id="ONas"></div>
+      <br><br><br><br><br><br><br><br><br>
+      <hr>
+      <br><br><br>
+
+      <font color="#0c59cf">
+      <h1 align="center">О нас</h1>
+      </font>
+      <p align="center"><font color="#798da3">Наша школа трейда уже более 5 лет рынке, мы выпустили уже сотни выпускников которые успели заработать десятки тысяч долларов, поэтому, если вы не боитесь больших денег и большой роскоши, присоединяйтесь к нам и уже скоро вы убедитесь в эффективности нашей платформы на практике</font> </p>
+      <br><br><br>
+      <hr>
+      <br><br><br>
+      <font color="#0c59cf">
+      <h1 align="center">Наши награды</h1>
+      </font>
+       <table>
+      <tr> <!-- Начало первой строки -->
+      <th>
+      	<img src="nagrada1.png" alt="1" class="plan" >
+      </th>
+      <th>
+     <img src="nagrada2-3.png" alt="2" class="plan" >
+      </th>
+      <th>
+       <img src="nagrada2-3.png" alt="3" class="plan" >
+      </th>
+      <th>
+       <img src="nagrada4.png" alt="4" class="plan" >
+      </th>
+      </tr> <!-- Конец первой строки -->
+      </table>
+      <div id="Kontakt"></div>
+       <br><br><br>
+      <hr>
+      <br><br><br><br><br><br>
+      <font color="#0c59cf">
+       <h1 align="center">Наши контакты</h1>
+      </font>  
+       
+      <table>
+      <tr> <!-- Начало первой строки -->
+      <th align="left">
+      	Киев
+      </th>
+      <th align="left">
+        Львов
+      </th>
+      <th>
+      
+      </th>
+      </tr> <!-- Конец первой строки -->
+      <tr><!-- Начало второй строки -->
+      <td align="left">Украина, Киев, Соломенский район
+      	
+      	<br>
+      	Email: contac@company.ua 
+      	<br>
+      	+380943783954
+      	<br>
+      	+380364993456
+       </td>
+      <td align="left">Украина, Львов, ул. Дмитрия Бортнянского
+      	<br>
+       Email: contac@company.ua
+        <br>
+      	+380943783954
+      	<br>
+      	+380364993456</td>
+        <td align="left"></td>
+      </tr><!-- Конец второй строки -->
+      <tr><!-- Начало третей строки -->
+      <td align="left">
+      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48719.41494777442!2d30.41354352769514!3d50.421020041996584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvNC10L3RgdC60LjQuSDRgNCw0LnQvtC9LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1594046150833!5m2!1sru!2sua" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </td>
+      <td align="left">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10904.208709607423!2d24.00299892680008!3d49.841503616947726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add9beb85bb15%3A0xa9c3b6e831cb6ce6!2z0YPQuy4g0JTQvNC40YLRgNC40Y8g0JHQvtGA0YLQvdGP0L3RgdC60L7Qs9C-LCAxMiwg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1594045930096!5m2!1sru!2sua" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </td>
+      </tr><!-- Конец  третей строки -->
+      </table>
+        
+       <p align="center" ><img src="LOGO.png" alt="LOGO" class="lastlogo"> <br>
+       <small>Иванов Николай © Copyright 2020</small></p>
+       </font>
+      </div>
+
+
+
+
+      </body>
+</html>
